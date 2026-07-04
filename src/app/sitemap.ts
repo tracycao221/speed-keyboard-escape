@@ -31,11 +31,16 @@ const guideRoutes = guidePages.map((page) => ({
   priority: page.slug === "beginner-guide" || page.slug === "how-to-play" ? 0.82 : 0.78
 }));
 
+function canonicalSitemapUrl(path: string) {
+  if (!path) return `${siteConfig.domain}/`;
+  return `${siteConfig.domain}${path.endsWith("/") ? path : `${path}/`}`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const seen = new Set<string>();
   return [...routes, ...guideRoutes]
     .map((route) => ({
-      url: `${siteConfig.domain}${route.path}`,
+      url: canonicalSitemapUrl(route.path),
       lastModified: new Date(),
       changeFrequency: route.changeFrequency,
       priority: route.priority
