@@ -1,0 +1,45 @@
+{
+  "skill": "adsterra-code-handoff",
+  "generatedAt": "2026-07-04T11:18:37Z",
+  "status": "pass",
+  "domain": "speed-keyboard-escape.com",
+  "cloudflarePagesProject": "1-speed-keyboard-escape-git",
+  "siteRoot": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/1-speed-keyboard-escape-calculator",
+  "projectDir": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/projects/1-speed-keyboard-escape",
+  "parsedPlacements": [
+    {
+      "format": "popunder",
+      "scriptUrl": "https://pl30203046.effectivecpmnetwork.com/d3/cf/ab/d3cfab992f9ddf9875d9c82bad9b758c.js"
+    }
+  ],
+  "unresolved": [],
+  "warnings": [
+    "Missing core display env vars: NEXT_PUBLIC_ADSTERRA_BANNER_728X90_KEY, NEXT_PUBLIC_ADSTERRA_BANNER_320X50_KEY, NEXT_PUBLIC_ADSTERRA_BANNER_300X250_KEY, NEXT_PUBLIC_ADSTERRA_NATIVE_1_ID, NEXT_PUBLIC_ADSTERRA_NATIVE_1_SCRIPT_URL. The site still runs, but those ad slots remain hidden."
+  ],
+  "productionEnvVarNames": [
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_MIN_PAGEVIEWS",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL"
+  ],
+  "envPayload": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/1-speed-keyboard-escape-calculator/adsterra_cloudflare_env.production.json",
+  "envExample": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/1-speed-keyboard-escape-calculator/adsterra_env.production.example",
+  "cloudflareSync": {
+    "status": "applied",
+    "report": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/1-speed-keyboard-escape-calculator/adsterra_cloudflare_sync_report.json",
+    "productionEnvVarNames": [
+      "NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER",
+      "NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR",
+      "NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL",
+      "NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS",
+      "NEXT_PUBLIC_ADSTERRA_POPUNDER_MIN_PAGEVIEWS",
+      "NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL"
+    ],
+    "note": "Cloudflare Pages env sync was applied using the same public env payload; env values are not recorded in this summary."
+  },
+  "redeploy": {
+    "status": "pending_git_push"
+  }
+}

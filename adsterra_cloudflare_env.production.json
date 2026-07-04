@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-07-04T11:18:33Z",
+  "domain": "speed-keyboard-escape.com",
+  "project": "1-speed-keyboard-escape-git",
+  "status": "ready_to_apply",
+  "productionEnv": {
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER": "true",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS": "30000",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_MIN_PAGEVIEWS": "2",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR": "false",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL": "false",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL": "https://pl30203046.effectivecpmnetwork.com/d3/cf/ab/d3cfab992f9ddf9875d9c82bad9b758c.js"
+  },
+  "note": "Public Adsterra runtime values only. Private API keys and Cloudflare tokens are never written here."
+}
