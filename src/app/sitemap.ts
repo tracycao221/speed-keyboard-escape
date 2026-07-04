@@ -1,0 +1,48 @@
+import type { MetadataRoute } from "next";
+import { guideHref, guidePages } from "@/data/guides";
+import { siteConfig } from "@/data/site";
+
+export const dynamic = "force-static";
+
+const routes: Array<{
+  path: string;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  priority: number;
+}> = [
+  { path: "", changeFrequency: "daily", priority: 1 },
+  { path: "/codes", changeFrequency: "daily", priority: 0.95 },
+  { path: "/tier-list", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/trello", changeFrequency: "weekly", priority: 0.72 },
+  { path: "/calculator", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/guides", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/guides/stage-12-guide", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/wiki", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/sources", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/privacy", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/terms", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/disclosure", changeFrequency: "monthly", priority: 0.3 }
+];
+
+const guideRoutes = guidePages.map((page) => ({
+  path: guideHref(page.slug),
+  changeFrequency: "weekly" as const,
+  priority: page.slug === "beginner-guide" || page.slug === "how-to-play" ? 0.82 : 0.78
+}));
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const seen = new Set<string>();
+  return [...routes, ...guideRoutes]
+    .map((route) => ({
+      url: `${siteConfig.domain}${route.path}`,
+      lastModified: new Date(),
+      changeFrequency: route.changeFrequency,
+      priority: route.priority
+    }))
+    .filter((entry) => {
+      if (seen.has(entry.url)) return false;
+      seen.add(entry.url);
+      return true;
+    });
+}

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-07-04T06:45:00Z",
+  "game": "+1 Speed Keyboard Escape",
+  "status": "ready",
+  "candidates": [
+    {
+      "type": "update-page",
+      "route": "/guides/updates",
+      "source": "Roblox title/YouTube/competitors"
+    },
+    {
+      "type": "update-page",
+      "route": "/codes",
+      "source": "codes SERP"
+    }
+  ]
+}

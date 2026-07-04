@@ -1,0 +1,278 @@
+{
+  "game": "+1 Speed Keyboard Escape",
+  "domain": "https://speed-keyboard-escape.com",
+  "pageGenerationPlan": [
+    {
+      "route": "/",
+      "pageType": "home",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/codes",
+      "pageType": "codes",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "source-backed",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/tier-list",
+      "pageType": "tier-list",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/trello",
+      "pageType": "official-link",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/wiki",
+      "pageType": "wiki",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/calculator",
+      "pageType": "calculator",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/guides",
+      "pageType": "guides",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/guides/beginner-guide",
+      "pageType": "beginner",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/guides/how-to-get-wins-fast",
+      "pageType": "wins",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "source-backed",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/guides/stage-12-guide",
+      "pageType": "stage-12",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "source-backed",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/guides/updates",
+      "pageType": "updates",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/sources",
+      "pageType": "sources",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/privacy",
+      "pageType": "legal",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/terms",
+      "pageType": "legal",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/about",
+      "pageType": "trust",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/contact",
+      "pageType": "trust",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    },
+    {
+      "route": "/disclosure",
+      "pageType": "trust",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/tier-list",
+        "/trello"
+      ],
+      "sitemapRequired": true,
+      "htmlExportRequired": true,
+      "claimState": "planned",
+      "generationOwner": "4.x"
+    }
+  ]
+}

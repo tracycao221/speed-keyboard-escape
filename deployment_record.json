@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-07-04T06:45:00Z",
+  "game": "+1 Speed Keyboard Escape",
+  "status": "ready_for_deploy_handoff_blocked_before_push",
+  "domain": "https://speed-keyboard-escape.com",
+  "githubRepo": "tracycao221/speed-keyboard-escape",
+  "cloudflarePages": {
+    "buildCommand": "npm run build",
+    "outputDirectory": "out"
+  },
+  "blockers": [
+    "GitHub push blocked until commercial sync safety check can be run."
+  ]
+}

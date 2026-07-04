@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-07-04T06:45:00Z",
+  "game": "+1 Speed Keyboard Escape",
+  "status": "configured",
+  "cadence": {
+    "codes": "6-12 hours",
+    "updates": "daily",
+    "longTail": "2-3x weekly",
+    "internalLinks": "weekly"
+  },
+  "targetRepo": "tracycao221/speed-keyboard-escape"
+}
