@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-07-04T06:45:00Z",
+  "generatedAt": "2026-07-04T09:50:00Z",
   "game": "+1 Speed Keyboard Escape",
-  "status": "ready_for_deploy_handoff_blocked_before_push",
+  "status": "ready_for_deploy_handoff",
   "domain": "https://speed-keyboard-escape.com",
   "githubRepo": "tracycao221/speed-keyboard-escape",
+  "github": {
+    "repository": "tracycao221/speed-keyboard-escape",
+    "url": "https://github.com/tracycao221/speed-keyboard-escape",
+    "branch": "main",
+    "pushed": true,
+    "commit": "9953174002c72044b1bcc04987962be5d37da1aa"
+  },
   "cloudflarePages": {
     "buildCommand": "npm run build",
     "outputDirectory": "out"
   },
-  "blockers": [
-    "GitHub push blocked until commercial sync safety check can be run."
+  "blockers": [],
+  "handoffItems": [
+    "Create or connect the Cloudflare Pages Git project.",
+    "Bind speed-keyboard-escape.com and www.speed-keyboard-escape.com after DNS/zone access is available.",
+    "Configure analytics and ad runtime values only when approved credentials/snippets are available."
   ]
 }
