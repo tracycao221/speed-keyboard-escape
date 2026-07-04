@@ -1,24 +1,202 @@
 {
-  "generatedAt": "2026-07-04T09:50:00Z",
-  "game": "+1 Speed Keyboard Escape",
-  "status": "ready_for_deploy_handoff",
-  "domain": "https://speed-keyboard-escape.com",
-  "githubRepo": "tracycao221/speed-keyboard-escape",
-  "github": {
-    "repository": "tracycao221/speed-keyboard-escape",
+  "step": "5.3",
+  "generatedAt": "2026-07-04T09:58:49Z",
+  "game": {
+    "slug": "1-speed-keyboard-escape",
+    "name": "+1 Speed Keyboard Escape"
+  },
+  "status": "deployed_pages_dev_custom_domain_pending",
+  "productionUrl": "https://1-speed-keyboard-escape-git.pages.dev",
+  "canonicalBase": "https://speed-keyboard-escape.com",
+  "targetDomain": "https://speed-keyboard-escape.com",
+  "deploymentUrl": "https://1-speed-keyboard-escape-git.pages.dev",
+  "latestDeploymentUrl": "https://23195045.1-speed-keyboard-escape-git.pages.dev",
+  "repository": {
+    "owner": "tracycao221",
+    "name": "speed-keyboard-escape",
+    "fullName": "tracycao221/speed-keyboard-escape",
     "url": "https://github.com/tracycao221/speed-keyboard-escape",
-    "branch": "main",
-    "pushed": true,
-    "commit": "9953174002c72044b1bcc04987962be5d37da1aa"
+    "visibility": "PUBLIC",
+    "defaultBranch": "main"
   },
-  "cloudflarePages": {
+  "project": {
+    "platform": "Cloudflare Pages",
+    "framework": "Next.js static export",
+    "domain": "speed-keyboard-escape.com",
+    "pagesProjectName": "1-speed-keyboard-escape-git",
+    "pagesDevUrl": "https://1-speed-keyboard-escape-git.pages.dev",
     "buildCommand": "npm run build",
-    "outputDirectory": "out"
+    "installCommand": "npm install",
+    "outputDirectory": "out",
+    "productionBranch": "main"
   },
-  "blockers": [],
-  "handoffItems": [
-    "Create or connect the Cloudflare Pages Git project.",
-    "Bind speed-keyboard-escape.com and www.speed-keyboard-escape.com after DNS/zone access is available.",
-    "Configure analytics and ad runtime values only when approved credentials/snippets are available."
-  ]
+  "cloudflare": {
+    "accountId": "30dc47d3b414f5bc395dd6b3ff7a8527",
+    "projectName": "1-speed-keyboard-escape-git",
+    "projectAction": "created",
+    "pagesDevUrl": "https://1-speed-keyboard-escape-git.pages.dev",
+    "tokenVerification": {
+      "success": true,
+      "status": "active",
+      "expires_on": null
+    },
+    "domains": [
+      {
+        "name": "speed-keyboard-escape.com",
+        "action": "created",
+        "status": "pending",
+        "zoneTag": null,
+        "validationData": {
+          "status": "pending",
+          "method": "http"
+        },
+        "verificationData": {
+          "status": "pending",
+          "error_message": "CNAME record not set"
+        },
+        "recommendedDns": {
+          "type": "CNAME",
+          "name": "@",
+          "target": "1-speed-keyboard-escape-git.pages.dev",
+          "note": "Use this when Cloudflare does not create or validate the DNS record automatically. Apex domains require DNS-provider CNAME flattening."
+        }
+      },
+      {
+        "name": "www.speed-keyboard-escape.com",
+        "action": "created",
+        "status": "pending",
+        "zoneTag": null,
+        "validationData": {
+          "status": "pending",
+          "method": "http"
+        },
+        "verificationData": {
+          "status": "pending",
+          "error_message": "CNAME record not set"
+        },
+        "recommendedDns": {
+          "type": "CNAME",
+          "name": "www",
+          "target": "1-speed-keyboard-escape-git.pages.dev",
+          "note": "Use this when Cloudflare does not create or validate the DNS record automatically. Apex domains require DNS-provider CNAME flattening."
+        }
+      }
+    ]
+  },
+  "localPreview": {
+    "siteRoot": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/1-speed-keyboard-escape-calculator",
+    "lastBuildStatus": "pass",
+    "lastLintStatus": "pass"
+  },
+  "verification": {
+    "cloudflareToken": "active",
+    "pagesProject": "pass",
+    "githubBinding": "pass",
+    "customDomains": "pending_dns",
+    "productionBranch": "main",
+    "pagesDeployment": "pass",
+    "dns": "blocked_zone_missing_or_nameserver_not_delegated",
+    "adsterra": "deferred_domain_not_registered",
+    "gsc": "blocked_missing_credentials_and_dns"
+  },
+  "externalActions": [
+    "Add speed-keyboard-escape.com as a Cloudflare zone or delegate the domain to Cloudflare nameservers from Spaceship.",
+    "After Cloudflare zone is active, create DNS records: CNAME @ -> 1-speed-keyboard-escape-git.pages.dev and CNAME www -> 1-speed-keyboard-escape-git.pages.dev, or rerun the Cloudflare domain step if Pages can automate it.",
+    "Wait for Cloudflare Pages custom domains speed-keyboard-escape.com and www.speed-keyboard-escape.com to become active, then rerun live redirect/canonical audit.",
+    "Add speed-keyboard-escape.com in Adsterra dashboard with Adult ads off and formats Popunder, Smartlink, Native Banner, Social Bar, Banner selected; rerun Adsterra onboarding after approval/placements exist.",
+    "After DNS is delegated, verify GSC domain property sc-domain:speed-keyboard-escape.com, submit https://speed-keyboard-escape.com/sitemap.xml, and request indexing for core URLs."
+  ],
+  "notes": [
+    "Cloudflare API token was read from CLI/env only and was not written to this report.",
+    "Cloudflare Pages Git integration is the standard deployment path; direct upload remains an exception."
+  ],
+  "latestCommit": "878710bd37ed6e40fd32f753b6438c773069bb40",
+  "dnsStatus": {
+    "cloudflareZoneFound": false,
+    "registrarNameservers": [
+      "launch2.spaceship.net",
+      "launch1.spaceship.net"
+    ],
+    "cloudflareNameserversActive": false,
+    "apexCurrentA": [
+      "34.216.117.25",
+      "54.149.79.189"
+    ],
+    "wwwCurrentCname": [],
+    "blocker": "speed-keyboard-escape.com is not present as a Cloudflare zone in the configured account, and registrar nameservers still point to Spaceship. Cloudflare API cannot create DNS records for this domain until the zone is added and nameservers are delegated."
+  },
+  "liveVerification": {
+    "pagesDevHome": {
+      "url": "https://1-speed-keyboard-escape-git.pages.dev/",
+      "status": 200
+    },
+    "sitemap": {
+      "url": "https://1-speed-keyboard-escape-git.pages.dev/sitemap.xml",
+      "status": 200,
+      "customDomainUrlCount": 19,
+      "pagesDevUrlCount": 0
+    },
+    "robots": {
+      "url": "https://1-speed-keyboard-escape-git.pages.dev/robots.txt",
+      "status": 200,
+      "sitemapMention": true,
+      "disallowAll": false
+    },
+    "canonical": {
+      "homepage": [
+        "https://speed-keyboard-escape.com/"
+      ],
+      "expectedCustomDomain": "https://speed-keyboard-escape.com/"
+    },
+    "robotsMeta": [
+      "index, follow"
+    ],
+    "noindexFound": false,
+    "chineseResidualFound": false,
+    "coreRoutes": {
+      "/codes": 200,
+      "/tier-list": 200,
+      "/trello": 200,
+      "/wiki": 200,
+      "/calculator": 200
+    },
+    "customDomainLive": false
+  },
+  "redirectAudit": {
+    "status": "blocked_custom_domain_not_live",
+    "pagesDev": "pass",
+    "apexHttps": "blocked_ssl_dns_not_pointing_to_pages",
+    "wwwHttps": "blocked_ssl_dns_not_pointing_to_pages",
+    "canonicalOnPagesDev": "points_to_custom_domain_as_expected"
+  },
+  "gsc": {
+    "status": "blocked",
+    "propertyType": "domain",
+    "property": "sc-domain:speed-keyboard-escape.com",
+    "sitemap": "https://speed-keyboard-escape.com/sitemap.xml",
+    "coreUrls": [
+      "https://speed-keyboard-escape.com/",
+      "https://speed-keyboard-escape.com/codes/",
+      "https://speed-keyboard-escape.com/tier-list/",
+      "https://speed-keyboard-escape.com/trello/",
+      "https://speed-keyboard-escape.com/wiki/",
+      "https://speed-keyboard-escape.com/calculator/"
+    ],
+    "blockers": [
+      "No Google Search Console credentials or API environment variables are available.",
+      "Domain resource verification cannot complete until DNS is controlled/delegated."
+    ]
+  },
+  "adsterra": {
+    "status": "deferred_domain_not_registered",
+    "adultAds": "manual_dashboard_required_off",
+    "requestedFormats": [
+      "Popunder",
+      "Smartlink",
+      "Native Banner",
+      "Social Bar",
+      "Banner"
+    ],
+    "manualAction": "Add speed-keyboard-escape.com in Adsterra publisher panel with Adult ads off and selected formats: Popunder, Smartlink, Native Banner, Social Bar, Banner. API is read-only for domain onboarding; rerun 5.4 after domain exists."
+  }
 }
