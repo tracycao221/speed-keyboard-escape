@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { runtimeConfig } from "@/lib/runtime-config";
 
-type BannerSize = "300x250" | "320x50" | "728x90";
+type BannerSize = "160x300" | "160x600" | "300x250" | "320x50" | "468x60" | "728x90";
 
 type BannerConfig = {
   height: number;
@@ -13,6 +13,18 @@ type BannerConfig = {
 };
 
 const bannerConfigs: Record<BannerSize, BannerConfig> = {
+  "160x300": {
+    width: 160,
+    height: 300,
+    key: runtimeConfig.adsterraBanner160x300Key,
+    scriptUrl: runtimeConfig.adsterraBanner160x300ScriptUrl
+  },
+  "160x600": {
+    width: 160,
+    height: 600,
+    key: runtimeConfig.adsterraBanner160x600Key,
+    scriptUrl: runtimeConfig.adsterraBanner160x600ScriptUrl
+  },
   "300x250": {
     width: 300,
     height: 250,
@@ -24,6 +36,12 @@ const bannerConfigs: Record<BannerSize, BannerConfig> = {
     height: 50,
     key: runtimeConfig.adsterraBanner320x50Key,
     scriptUrl: runtimeConfig.adsterraBanner320x50ScriptUrl
+  },
+  "468x60": {
+    width: 468,
+    height: 60,
+    key: runtimeConfig.adsterraBanner468x60Key,
+    scriptUrl: runtimeConfig.adsterraBanner468x60ScriptUrl
   },
   "728x90": {
     width: 728,
@@ -76,9 +94,11 @@ function AdvertisementShell({
 
 function AdsterraBannerUnit({
   className = "",
+  label = "Advertisement",
   size
 }: {
   className?: string;
+  label?: string;
   size: BannerSize;
 }) {
   const hostRef = useRef<HTMLDivElement>(null);
@@ -112,7 +132,7 @@ function AdsterraBannerUnit({
   if (!scriptUrl || !config.key) return null;
 
   return (
-    <AdvertisementShell className={className}>
+    <AdvertisementShell className={className} label={label}>
       <div
         ref={hostRef}
         className="ad-host"
@@ -190,7 +210,7 @@ function AdsterraNativeUnit({
   if (!cleanContainerId || !normalizedScriptUrl) return null;
 
   return (
-    <AdvertisementShell className={className}>
+    <AdvertisementShell className={className} label="Advertisement">
       <div ref={hostRef} className="ad-host ad-host-native" />
     </AdvertisementShell>
   );
@@ -223,6 +243,27 @@ export function AdsterraSmartLinkAnchor({
 
 export function AdsterraBanner() {
   return <AdsterraBannerUnit size="300x250" />;
+}
+
+export function AdsterraBannerBySize({
+  className,
+  label,
+  size
+}: {
+  className?: string;
+  label?: string;
+  size: BannerSize;
+}) {
+  return <AdsterraBannerUnit className={className} label={label} size={size} />;
+}
+
+export function AdsterraBanner468x60() {
+  return <AdsterraBannerUnit size="468x60" />;
+}
+
+export function AdsterraStickyRail() {
+  if (!runtimeConfig.adsterraEnableStickyRail) return null;
+  return <AdsterraBannerUnit className="ad-rail-shell" label="Sponsored" size="160x600" />;
 }
 
 export function AdsterraLeaderboard() {

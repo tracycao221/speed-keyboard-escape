@@ -24,7 +24,17 @@ export const runtimeConfig = {
   adsterraNative2ScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_2_SCRIPT_URL),
   adsterraLeaderboardId: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_LEADERBOARD_ID),
   adsterraSmartLinkUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_SMARTLINK_URL),
+  adsterraEnablePopunder: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER) === "true",
   adsterraPopunderScriptUrl:
     readEnv(process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL) || defaultAdsterraPopunderScriptUrl,
+  adsterraBanner468x60Key: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_468X60_KEY),
+  adsterraBanner468x60ScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_468X60_SCRIPT_URL),
+  adsterraBanner160x600Key: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160X600_KEY),
+  adsterraBanner160x600ScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160X600_SCRIPT_URL),
+  adsterraBanner160x300Key: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160X300_KEY),
+  adsterraBanner160x300ScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160X300_SCRIPT_URL),
+  adsterraEnableStickyRail: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL) === "true",
+  adsterraEnableSocialBar: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR) === "true",
+  adsterraSocialBarScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SCRIPT_URL),
   analyticsId: readEnv(process.env.NEXT_PUBLIC_ANALYTICS_ID)
 };

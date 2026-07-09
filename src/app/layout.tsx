@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { AdsterraSmartLink } from "@/components/ads";
+import { RouteAwareAdSlots } from "@/components/ads/RouteAwareAdSlots";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/data/site";
@@ -9,7 +10,8 @@ import { runtimeConfig } from "@/lib/runtime-config";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const popunderScriptUrl = runtimeConfig.adsterraPopunderScriptUrl;
+const popunderScriptUrl = runtimeConfig.adsterraEnablePopunder ? runtimeConfig.adsterraPopunderScriptUrl : undefined;
+const socialBarScriptUrl = runtimeConfig.adsterraEnableSocialBar ? runtimeConfig.adsterraSocialBarScriptUrl : undefined;
 const adsenseClientId = runtimeConfig.adsenseClientId;
 
 export const metadata: Metadata = {
@@ -67,7 +69,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
-        <style>{`.ad-shell{min-height:90px}.ad-host{min-height:90px}`}</style>
+        <style
+          id="ad-cls-baseline"
+          dangerouslySetInnerHTML={{
+            __html: ".ad-shell,.ad-host{min-height:90px}.ad-leaderboard .ad-shell{min-height:124px}"
+          }}
+        />
         {adsenseClientId ? (
           <script
             id="google-adsense"
@@ -79,8 +86,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {popunderScriptUrl ? (
           <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
         ) : null}
+        {socialBarScriptUrl ? (
+          <Script id="domain-only-effectivecpm" strategy="afterInteractive">
+            {`
+              if (window.location.hostname === "speed-keyboard-escape.com") {
+                var adScript = document.createElement("script");
+                adScript.src = "${socialBarScriptUrl}";
+                adScript.async = true;
+                document.body.appendChild(adScript);
+              }
+            `}
+          </Script>
+        ) : null}
         <AdsterraSmartLink />
         <Navbar />
+        <RouteAwareAdSlots />
         {children}
         <Footer />
       </body>
