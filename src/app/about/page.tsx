@@ -5,7 +5,8 @@ import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.gameName} Wiki` },
-  description: `About this unofficial ${siteConfig.gameName} Roblox guide site, its source policy, and correction process.`
+  description: `About this unofficial ${siteConfig.gameName} Roblox guide site, its source policy, and correction process.`,
+  alternates: { canonical: `${siteConfig.domain}/about` }
 };
 
 export default function AboutPage() {

@@ -59,7 +59,7 @@ export const guidePages: GuidePage[] = [
       { eyebrow: "Execution", title: "Run the stage like a checklist", body: "Break hard stages into smaller sections instead of sprinting through the whole maze on instinct.", bullets: ["Pause mentally after each safe segment.", "Avoid overcorrecting when speed gets high.", "Record which turn or jump fails most often.", "Return to wins farming if repeated failures slow progression."] }
     ],
     faq: [
-      { q: "Is this the exact Stage 12 route?", a: "This launch guide avoids unverified route claims. It will be updated when current visual evidence confirms the route." },
+      { q: "Is this the exact Stage 12 route?", a: "No. This guide still avoids exact-route claims because current visual evidence for the live Stage 12 layout has not been verified as of July 9, 2026." },
       { q: "Why is Stage 12 popular?", a: "Search and competitor guide signals show players get stuck there, so it deserves a dedicated route page." }
     ],
     related: ["how-to-get-wins-fast", "walkthrough", "faq"]
@@ -67,13 +67,13 @@ export const guidePages: GuidePage[] = [
   {
     slug: "updates",
     title: `${siteConfig.gameName} Updates`,
-    metaTitle: `${siteConfig.gameName} Updates, Events & Admin Abuse Tracker`,
+    metaTitle: `${siteConfig.gameName} Updates, Events & Free Group Gift Tracker`,
     description: "Track +1 Speed Keyboard Escape updates, event windows, admin-abuse countdown signals, title changes, and pages that need rechecking.",
     eyebrow: "Updates",
     intro: "Updates can change codes, stages, boosts, and event timing. This page keeps time-sensitive claims separate from stable beginner advice.",
     sections: [
       { eyebrow: "Watch list", title: "What to recheck after each update", body: "When the Roblox title changes or a countdown appears, recheck codes, stage routes, boost effects, and event rewards before editing guides.", bullets: ["Roblox title and description", "Code/social-code status", "Stage 12 or maze layout", "Win, speed, and boost behavior", "YouTube and competitor update vocabulary"] },
-      { eyebrow: "Current signal", title: "Admin Abuse and Candy & Chocolate signals", body: "Launch research found update/countdown demand around Admin Abuse and the Candy & Chocolate title. Exact rewards and timing require live confirmation.", bullets: ["Keep event claims labelled until official or in-game proof exists.", "Use update pages for fresh keywords instead of changing stable guides too often.", "Record source URLs and checked dates.", "Retire outdated countdown text after the event passes."] }
+      { eyebrow: "Current signal", title: "[X4], Candy & Chocolate, and free-group-gift signals", body: "The official Roblox page currently uses the [X4] title prefix, keeps Candy & Chocolate branding, and still advertises a free group gift. The title does not verify a public code, reward amount, event timer, or boost formula.", bullets: ["Treat [X4] as a current title signal, not a code or reward promise.", "Keep event claims labelled until official or in-game proof exists.", "Use update pages for fresh keywords instead of changing stable guides too often.", "Retire the [X4] wording after the official page changes."] }
     ],
     faq: [
       { q: "When is the next update?", a: "Use the updates page as a watch list; exact timing must be confirmed from the live game or official sources." },
@@ -109,7 +109,7 @@ export const guidePages: GuidePage[] = [
       { eyebrow: "Quick answers", title: "Most searched questions", body: "Most early searches are about codes, wins, Stage 12, boost rankings, and whether a Discord, Trello, or wiki is official.", bullets: ["Codes are only listed as active when verified.", "Stage 12 has enough demand for a dedicated guide.", "Boost rankings are goal-based until effects are confirmed.", "Official links are separated from community links."] }
     ],
     faq: [
-      { q: "Is there an official wiki?", a: "No official wiki was verified during launch research." },
+      { q: "Is there an official wiki?", a: "No separate official wiki was verified as of July 9, 2026." },
       { q: "What pages should I open first?", a: "Start with codes, beginner guide, wins guide, Stage 12 guide, and official-link status." }
     ],
     related: ["beginner-guide", "stage-12-guide", "updates"]

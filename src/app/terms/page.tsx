@@ -5,7 +5,8 @@ import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: { absolute: `${siteConfig.gameName} Wiki Terms of Service` },
-  description: `Terms of service for the unofficial ${siteConfig.gameName} Roblox guide site.`
+  description: `Terms of service for the unofficial ${siteConfig.gameName} Roblox guide site.`,
+  alternates: { canonical: `${siteConfig.domain}/terms` }
 };
 
 export default function TermsPage() {

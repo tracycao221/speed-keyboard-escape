@@ -8,8 +8,8 @@ export const siteConfig: SiteConfig = {
   description: `${gameConfig.name} codes, stage guides, speed and wins tips, tier list notes, official Discord/Trello status, update tracker, and a conservative wins planner.`,
   valueProposition: `Check whether ${gameConfig.name} has active codes, learn how to get wins faster, clear Stage 12-style walls, and choose boosts without relying on fake rewards or unverified tier claims.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial, fan-made Roblox resource. Roblox, SecretVerse Studio, and the official game page remain the source of record for updates and support.`,
-  lastUpdated: "2026-07-04",
-  freshnessLabel: "codes, update, and source status checked July 4, 2026",
+  lastUpdated: "2026-07-09",
+  freshnessLabel: "codes, update, and source status checked July 9, 2026",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -73,7 +73,7 @@ export const heroActions = [
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
-  { label: "Code status", value: "Needs check", note: "Several guides report social-code style rewards; no fake codes listed" },
+  { label: "Code status", value: "No verified public code", note: "Official game page mentions a free group gift, but no creator-announced code string is verified" },
   { label: "Game type", value: "Speed obby", note: "Keyboard obstacle + speed simulator loop" },
   { label: "Core help", value: "Wins", note: "Routes, speed boosts, stages, and update timing" },
   { label: "Source model", value: "Labelled", note: "Official, competitor, and community claims separated" }
@@ -82,9 +82,9 @@ export const heroMetrics: HeroMetric[] = [
 export const activeCodes: GameCode[] = [
   {
     code: "No verified public code",
-    reward: "Some competitors describe a social or Discord code flow, but this site has not verified a currently redeemable public code.",
+    reward: "Competitor guides still describe social-code or Discord-code flows, and the official Roblox game page mentions a free group gift. No creator-announced public code string or reward amount is verified here yet.",
     status: "Needs check",
-    addedDate: "Checked 2026-07-04"
+    addedDate: "Checked 2026-07-09"
   }
 ];
 
@@ -139,7 +139,8 @@ export const wikiCards: LinkCard[] = [
 
 export const officialLinks: LinkCard[] = [
   { title: "Official Roblox game page", href: gameConfig.dataSources.officialGameUrl, eyebrow: "Official", description: "Source of record for the current title, creator, game access, and Roblox-side updates." },
-  { title: "SecretVerse Studio group", href: "https://www.roblox.com/communities/34864130/SecretVerse-Studio", eyebrow: "Official candidate", description: "Creator/group surface to verify group rewards and official announcements." },
+  { title: "SecretVerse Studio group", href: "https://www.roblox.com/communities/1074557114/SecretVerse-Studio", eyebrow: "Creator-owned", description: "Use the real creator group to verify the official free-group-gift claim and future Roblox announcements." },
+  { title: "SecretVerse Discord invite", href: gameConfig.dataSources.discord ?? "https://discord.gg/secretverse", eyebrow: "Creator-linked", description: "A live SecretVerse invite is still worth checking for announcements, but this run did not directly prove ownership from an official Roblox surface, so treat it as a linked community channel until reconfirmed." },
   { title: "Source checklist", href: "/sources", eyebrow: "Editorial", description: "Explains which claims are official, reported by competitors, or still unverified." }
 ];
 
@@ -158,12 +159,12 @@ export const videoGuides: LinkCard[] = [
 export const faqs: Record<string, FaqItem[]> = {
   home: [
     { q: `What is ${gameConfig.name}?`, a: `${gameConfig.name} is a Roblox speed obby and simulator-style game where players build speed, run keyboard lanes, clear stages, and farm wins.` },
-    { q: `Are there active ${gameConfig.name} codes?`, a: "As of the July 4, 2026 site check, this launch page does not publish any verified active public code. Some competitors describe social-code or Discord-code flows, so check the codes page for the current status." },
-    { q: `Does ${gameConfig.name} have a Trello?`, a: "No official public Trello was verified during launch research. The Trello page tracks Discord, wiki, Roblox group, and board status separately." },
+    { q: `Are there active ${gameConfig.name} codes?`, a: "As of the July 9, 2026 site check, this site does not publish any verified active public code string. Competitors still report social-code or Discord-code flows, and the official game page still signals a free group gift, so check the codes page for the current status." },
+    { q: `Does ${gameConfig.name} have a Trello?`, a: "No official public Trello was verified as of July 9, 2026. The Trello page tracks Discord, wiki, Roblox group, and board status separately." },
     { q: "What should I do first?", a: "Check codes, build speed safely, farm early wins, then use the Stage 12 and wins guides before spending Robux or chasing a tier list." }
   ],
   codes: [
-    { q: `Are there working ${gameConfig.name} codes?`, a: "No verified public active code is published here yet. Unverified social-code claims are tracked separately so players do not waste time." },
+    { q: `Are there working ${gameConfig.name} codes?`, a: "No verified public active code string is published here yet. Unverified social-code claims are tracked separately so players do not waste time." },
     { q: "Where should codes be checked?", a: "Check the official Roblox page, creator/group surfaces, in-game code UI, and reliable competitor updates before listing a code as active." }
   ],
   calculator: [

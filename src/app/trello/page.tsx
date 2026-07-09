@@ -31,10 +31,16 @@ const statusRows = [
     note: "Use this for the game title, creator, Roblox availability, badges, and public update text."
   },
   {
+    label: "SecretVerse Studio group",
+    href: "https://www.roblox.com/communities/1074557114/SecretVerse-Studio",
+    status: "Creator-owned",
+    note: "Use the creator group to verify group-gift language and creator-posted update notes such as new stage announcements."
+  },
+  {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Candidate source" : "Needs verification",
-    note: "Use creator-owned Discord announcements when available. Avoid reposting unverified community rumors as facts."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Creator-linked" : "Needs verification",
+    note: "A live SecretVerse invite is available, but this run did not directly prove ownership from an official Roblox surface. Use it as a monitoring lead, not as the source of record."
   },
   {
     label: "Trello",
@@ -58,14 +64,14 @@ export default function TrelloStatusPage() {
       <PageIntro
         eyebrow="Community status"
         title={`${siteConfig.gameName} Trello, Discord & Wiki Status`}
-        description={`Use this page to check which ${siteConfig.gameName} community sources are official, which still need verification, and where to confirm codes, updates, and tier-list changes.`}
+        description={`Use this page to check which ${siteConfig.gameName} sources are creator-owned, which still need verification, and where to confirm codes, updates, group gifts, and tier-list changes.`}
       />
 
       <section className="mt-10">
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page should be updated after research confirms the creator-owned links. Until then, uncertain links stay clearly labelled."
+          copy="Checked July 9, 2026: the official Roblox page and creator group are confirmed, the SecretVerse Discord invite remains only creator-linked in this run, and Trello plus any separate official wiki still remain unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {
